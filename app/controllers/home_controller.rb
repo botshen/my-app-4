@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     render json: {
       message: "Hello from Rails!",
       status: "success",
-      time: Time.current
+      timestamp: Time.current.strftime("%Y年%m月%d日")
     }
   end
 end
